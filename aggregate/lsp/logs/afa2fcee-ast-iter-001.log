@@ -1,0 +1,7 @@
+[2026-09-16T03:18:03Z] === AST ITERATION 1 START | repo=bytedance/sonic sha=afa2fcee ===
+[2026-09-16T03:18:03Z] [iter=1] PHASE START: ast repo=bytedance/sonic sha=afa2fcee
+[2026-09-16T03:18:03Z] [iter=1] Building AST aggregate chunks
+[2026-09-16T03:31:48Z] [iter=1] AST chunks built count=2 triples=9058018
+[2026-09-16T03:31:48Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/afa2fcee563e04e912786ebd77b53760181fa622/.complete
+[2026-09-16T03:31:48Z] [iter=1] PHASE END: ast elapsed_s=825 elapsed_min=13.8
+[2026-09-16T03:31:48Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
