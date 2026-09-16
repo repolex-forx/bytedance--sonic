@@ -1,0 +1,36 @@
+[2026-09-16T04:21:18Z] === ENRICH ITERATION 1 START | repo=bytedance/sonic sha=afa2fcee ===
+[2026-09-16T04:21:18Z] [iter=1] PHASE START: enrich repo=bytedance/sonic sha=afa2fcee runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/afa2fcee-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/afa2fcee563e04e912786ebd77b53760181fa622.nq.gz
+[2026-09-16T04:21:23Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=80 MB
+[2026-09-16T04:22:53Z] [iter=1] AST store loaded triples=9058018 load_secs=87 mem_mb=1093 MB
+[2026-09-16T04:22:53Z] [iter=1] Step 2: Finding LSP targets mem_mb=1093 MB
+[2026-09-16T04:22:58Z] [iter=1] LSP targets found call_sites=26978 imports=0 extends=0 implements=0 secs=5
+[2026-09-16T04:23:01Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1093 MB
+[2026-09-16T04:23:41Z] [iter=1] Position index built positions=336077 nodes_with_types=379269 secs=40 mem_mb=1093 MB
+[2026-09-16T04:23:41Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1093 MB already_completed_types=[] already_completed_files=0
+[2026-09-16T04:23:41Z] [iter=1] Resolving target type target_type=call_site count=26978
+[2026-09-16T04:23:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=0 resolved=0 errors=26978 current=native/utf8.h
+[2026-09-16T04:24:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=1 resolved=40 errors=26994 current=native/parsing.h
+[2026-09-16T04:27:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=2 resolved=124 errors=27041 current=native/scanning.h
+[2026-09-16T04:42:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.6 files_done=3 resolved=334 errors=27291 current=native/parse_with_padding.c
+[2026-09-16T04:58:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.3 files_done=4 resolved=360 errors=27548 current=native/f32toa.c
+[2026-09-16T05:00:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.1 files_done=5 resolved=360 errors=27578 current=native/fastint.h
+[2026-09-16T05:02:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.5 files_done=6 resolved=384 errors=27617 current=native/simd.h
+[2026-09-16T05:03:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.4 files_done=7 resolved=416 errors=27631 current=native/f64toa.c
+[2026-09-16T05:05:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.6 files_done=8 resolved=416 errors=27668 current=native/quote.c
+[2026-09-16T05:07:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.5 files_done=11 resolved=416 errors=27698 current=native/lookup_small_key.c
+[2026-09-16T05:08:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.0 files_done=12 resolved=436 errors=27707 current=native/get_by_path.c
+[2026-09-16T05:09:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.9 files_done=13 resolved=436 errors=27722 current=native/unittest/test_to_lower.c
+[2026-09-16T05:10:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.5 files_done=15 resolved=439 errors=27748 current=native/utils.h
+[2026-09-16T05:11:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.2 files_done=16 resolved=447 errors=27758 current=native/atof_native.h
+[2026-09-16T05:12:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.1 files_done=17 resolved=447 errors=27774 current=native/lspace.h
+[2026-09-16T05:12:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.7 files_done=20 resolved=454 errors=27783 current=native/vnumber.c
+[2026-09-16T05:13:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.2 files_done=25 resolved=454 errors=27792 current=native/skip_array.c
+[2026-09-16T05:14:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.9 files_done=29 resolved=454 errors=27803 current=native/skip_number.c
+[2026-09-16T05:14:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.4 files_done=36 resolved=454 errors=27811 current=native/vstring.h
+[2026-09-16T05:15:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=38 resolved=496 errors=27830 current=tools/asm2arm/arm.py
+[2026-09-16T05:32:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.2 files_done=39 resolved=912 errors=28098 current=scripts/test_pcsp.py
+[2026-09-16T05:33:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.0 files_done=40 resolved=939 errors=28111 current=loader/internal/iasm/trim.py
+[2026-09-16T05:33:16Z] [iter=1] Target type resolved target_type=call_site resolved=955 errors=28111 secs=4175 mem_mb=1093 MB
+[2026-09-16T05:33:19Z] [iter=1] Step 5: Writing final enrichment file triples=17017
+[2026-09-16T05:33:19Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/afa2fcee563e04e912786ebd77b53760181fa622.nq.gz size_kb=278
+[2026-09-16T05:33:19Z] [iter=1] PHASE END: enrich elapsed_s=4322 elapsed_min=72.0 total_triples=17017
